@@ -1,0 +1,18 @@
+import pandas as pd
+import geopandas
+from pandas import read_csv
+
+#seleccionar tablas
+table_1 = read_csv(r'D:\ruta\ruta\file1_name.csv')
+table_2 = read_csv(r'D:\ruta\ruta\file2_name.csv')
+
+#concatenar tablas en df
+concatenar_tablas = pd.concat([table_1, table_2])
+concatenar_tablas.sort_values(by='columna_elegida', ascending=False)
+
+#filtrar df
+filtrar_tablas = concatenar_tablas[jams_chiapasconcatenar_tablas['columna'] >= 'valor']
+filtrar_tablas
+
+#exportar df a csv
+filtrar_tablas.to_csv(r'D:\ruta\ruta\nombre_archivo.csv')
