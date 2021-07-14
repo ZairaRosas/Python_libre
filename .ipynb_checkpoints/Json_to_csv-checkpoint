@@ -1,0 +1,20 @@
+import pandas as pd
+
+#importar json
+parte1 = pd.read_json(r'D:\ruta\ruta\ruta\nombre_archivo.json', lines =True)
+parte1
+
+parte2 = pd.read_json(r'D:\ruta\ruta\ruta\nombre_archivo.json', lines =True)
+parte2
+
+parte3 = pd.read_json(r'D:\ruta\ruta\ruta\nombre_archivo.json', lines =True)
+parte3
+
+parte4 = pd.read_json(r'D:\ruta\ruta\ruta\nombre_archivo.json', lines =True)
+parte4
+
+parte5 = pd.read_json(r'D:\ruta\ruta\ruta\nombre_archivo.json', lines =True)
+parte5
+
+completo = pd.concat([parte1, parte2, parte3, parte4, parte5])
+completo.to_csv(r'D:\2020\LOC_INT\BD\rentas.csv')
